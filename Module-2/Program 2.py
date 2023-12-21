@@ -5,7 +5,7 @@ n=int(input("Enter a number:"))
 
 #To find the factorial of the number entered
 if n<0:
-    print("Factorial is not defined for nragtive number.")
+    print("Factorial is not defined for negative number.")
 elif n==0:
     print("Factorial of 0 is 1.")
 else:
