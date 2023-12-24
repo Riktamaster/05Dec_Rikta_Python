@@ -8,4 +8,3 @@ if alphabet in ['A','a','E','e','I','i','O','o','U','u']:
     print(f"{alphabet} is a vowel.")
 else:
     print(f"{alphabet} is a consonant.")
-
