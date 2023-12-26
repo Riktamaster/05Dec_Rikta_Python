@@ -8,4 +8,4 @@ substr=input("Enter substring from the string entered: ")
 count=mystr.count(substr)
 
 #To print the count of occurences of substring
-print(f"The {substr} appears {count} times in my string.")
+print(f"{substr} appears {count} times in my string.")
