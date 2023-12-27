@@ -8,5 +8,4 @@ if len(mystr)<2:
     print("Empty string")
 else:
     new_str=mystr[:2] + mystr[-2:]
-
-print(new_str)
+    print(new_str)
