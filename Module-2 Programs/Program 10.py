@@ -7,8 +7,10 @@ for i in range (n):
     x=input(f"Enter item {i+1}: ")
     mylist.append(x)
 print("List:",mylist)
-#To sort the list in ascending order
+
+# To sort the list in ascending order
 x=sorted(mylist)
 print("Sorted list:",x)
 
+# To print the second smallest number
 print(f"Second smallest number is {x[1]}")
