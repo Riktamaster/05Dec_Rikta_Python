@@ -1,16 +1,20 @@
 # Write a Python program to check whether a list contains a sub list
-# To get input for two lists from the user
+
+# To get input of main list from the user
 main_list=[]
-sub_list=[]
 n=int(input("Enter number of items for main list:"))
-m=int(input("Enter number of items for sub list:"))
 for i in range(n):
-    x=input("Enter items for main list:")
+    x=input(f"Enter item {i+1}:")
     main_list.append(x)
+
+# To get input of sub list from the user
+sub_list=[]
+m=int(input("Enter number of items for sub list:"))
 for j in range(m):
-    y=input("Enter items for sub list:")
+    y=input(f"Enter item {i+1}:")
     sub_list.append(y)
 
+# To check whether main list contains sub list
 if all(item in main_list for item in sub_list):
     print("Main list contains sub list.")
 else:
