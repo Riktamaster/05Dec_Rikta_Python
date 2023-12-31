@@ -17,4 +17,3 @@ sum_num=sum(list_number)
 print("Largest number:",largest_num)
 print("Smallest number:",smallest_num)
 print("Sum of all numbers:",sum_num)
-
