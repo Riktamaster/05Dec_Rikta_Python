@@ -1,5 +1,6 @@
 # Write a Python program to remove duplicates from a list
 
+# To get input of list from user
 list=[]
 n=int(input("Enter number of items to form the list: "))
 for i in range(n):
