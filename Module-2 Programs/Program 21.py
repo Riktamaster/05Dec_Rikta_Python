@@ -16,6 +16,3 @@ data[-1]=y
 
 # To print the result in tuple format
 print("Data in form of tuple:",tuple(data))
-
-
-
