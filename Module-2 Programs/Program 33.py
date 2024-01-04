@@ -1,6 +1,7 @@
 '''Write a Python program to combine two dictionary adding values for common keys.
 d1 = {'a': 100, 'b': 200, 'c':300} o d2 = {'a': 300, 'b': 200,'d':400}
 Sample output: Counter ({'a': 400, 'b': 400,'d': 400, 'c': 300})'''
+
 from collections import Counter
 # To get user input for dictionary 1
 dict1={}
@@ -21,9 +22,13 @@ print("---------------------------------------")
 print("Dictionary 1:",dict1)
 print("Dictionary 2:",dict2)
 
+# Create counters from dictionaries
 c1=Counter(dict1)
 c2=Counter(dict2)
 
+# Convert result to a dictionary
 result=c1+c2
 result_dict=dict(result)
+
+# To print the result
 print("Resultant dictionary:",result_dict)
