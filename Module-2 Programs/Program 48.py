@@ -8,5 +8,8 @@ def sum_of_divisors(n):
             sum+=i # add i to the sum_of_divisors if it is a divisor
     return sum
 
+# To get user input for number
 n=int(input("Enter number:"))
+
+# To print the result
 print(f"Sum of all divisors of {n} is:",sum_of_divisors(n))
