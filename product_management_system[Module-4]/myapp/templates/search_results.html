@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+</head>
+<body style="background-color: lightcoral;">
+    <h1>Search Results</h1>
+    <hr>
+    
+    {% if query %}
+        <p>Showing results for '{{ query }}':</p>
+    {% endif %}
+
+    <ul>
+        {% for i in results %}
+            <li>Product: {{ i.product.product_name }} </li><br><br>
+            <li>Price: {{ i.product_price }} </li><br><br>
+            <li>Image:{{i.product_image}}</li> <br></br>
+            <li>Model: {{i.product_model }} </li><br><br>
+            <li>RAM: {{ i.product_ram }} </li><br><br>
+               
+        {% empty %}
+            <li>No results found.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
