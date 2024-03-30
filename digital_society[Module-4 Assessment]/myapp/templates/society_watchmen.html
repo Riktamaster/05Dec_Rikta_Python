@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Society Watchmen</title>
+</head>
+<body style="background-color: gold;">
+    <h1><center>Society Watchmen</center></h1>
+    <hr>
+    <ul>
+        {% for i in watchmen %}
+            <li><h3>{{ i.name }} - {{ i.contact_number }}</h3></li>
+        {% endfor %}
+    </ul>
+    <a href="/dashboard">Back to Dashboard</a>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body style="background-color: rgb(241, 133, 187);">
+    <h1><center>Events</center></h1>
+    <hr>
+    <ul>
+        {% for i in events %}
+            <h3><li>{{ i.title }} </li></h3>
+            <p>Event Date: {{ i.date }}</p>
+            <p>{{ i.description }} </p>
+            
+        {% endfor %}
+    </ul>
+    <a href="/dashboard">Back to Dashboard</a>
+</body>
+</html>
