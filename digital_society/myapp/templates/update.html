@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Data</title>
+</head>
+<body style="background-color: rgb(162, 198, 129);">
+    <center><h1>Update your data</h1></center>
+    <center><h2 style="color: brown;"></h2></center>
+    <hr>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" value="{{userid.username}}" name="username" placeholder="Username" required><br><br>
+        <input type="email" value="{{userid.email}}" name="email" placeholder="Email" required><br><br>
+        <input type="text" value="{{userid.full_name}}" name="full_name" placeholder="Full name"><br><br>
+        <input type="number" value="{{userid.contact_number}}" name="contact_number" placeholder="Contact Number" required><br><br>
+        <input type="password" value="{{userid.password}}" name="password" placeholder="Password" required><br><br>
+        <input type="date" value="{{userid.date_of_birth|date:'Y-m-d'}}" name="date_of_birth" placeholder="Date of Birth" required><br><br>
+        <input type="submit" value="Update">
+        <input type="reset">
+    </form>
+    <hr>
+    <a href="/myprofile">Back to My Profile</a>
+</body>
+</html>
